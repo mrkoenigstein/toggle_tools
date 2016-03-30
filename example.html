@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkbox Toggle Example</title>
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <script language="javascript" type="text/javascript" src="toggle_tools.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            "use strict";
+            $('input#all_colors').toggle('.color');
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1>Checkbox toggle example</h1>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th><input id="all_colors" name="all_colors" type="checkbox"></th>
+                    <th>Color</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="color" name="color" type="checkbox"></td>
+                    <td>Blue</td>
+                </tr>
+                <tr>
+                    <td><input class="color" name="color" type="checkbox"></td>
+                    <td>Red</td>
+                </tr>
+                <tr>
+                    <td><input class="color" name="color" type="checkbox"></td>
+                    <td>Green</td>
+                </tr>
+                <tr>
+                    <td><input class="color" name="color" type="checkbox"></td>
+                    <td>Yellow</td>
+                </tr>
+                <tr>
+                    <td><input class="color" name="color" type="checkbox"></td>
+                    <td>Black</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
