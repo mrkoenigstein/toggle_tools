@@ -1,14 +1,9 @@
 # Toggle Tools
 
-Two simple functions to toogle a bunch of checkboxe with a 'check-all' checkbox.
+A simple jQuery plugin to toogle a bunch of checkboxe with a 'check-all' checkbox.
 
-# functions
+# Usage
 
-## toggleAll
+Simply select the 'check-all' input element a pass the class of the childs as parameter.
 
-toggle all checkboxes with the state of the 'check-all' checkbox.
-
-## reverseToggle
-
-reverse the toggle, if you toggle a child checkbox the 'check-all' checkbox is also toggled.
-
+``$('input#all_colors').toggle('.color');``
