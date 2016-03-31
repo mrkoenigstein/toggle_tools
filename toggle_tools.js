@@ -51,12 +51,17 @@
      * @param childSelector - The selector of the child checkboxe which you all want to check or uncheck
      */
     function reverseToggle(allSelector, childSelector){
+        var allchecked = true;
         jQuery(childSelector).each(function () {
             var checked = $(this).prop( "checked" );
             if(checked !== true){
-                $(allSelector).removeAttr('checked');
+                $(allSelector).prop('checked', false);
+                allchecked = false;
                 return;
             }
         });
+        if(allchecked === true){
+            $(allSelector).prop('checked', true);
+        }
     }
 }( jQuery ));
